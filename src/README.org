@@ -1,0 +1,21 @@
+# 如何使用
+
+1. 复制你的clash订阅到当前目录下的 airport.txt
+2. 填写自己的想用本地dns解析的域名到 localdomain.txt
+2. 执行run.py
+
+#+begin_src shell
+# 安装必要的包
+pip install requests yaml
+# --use_v6 参数使用ipv6
+# --config
+# simple 使用极简配置 只使用geoip cn 和 geosite geolocation-cn geolocation-!cn
+# complex
+# --docker 不使用set system proxy
+# --lan 监听0.0.0.0
+# --tun 虚拟网卡入口
+# --mixed http and socks 代理默认set system proxy
+# --dns_direct 直连dns
+# --dns_remote 远程dns
+python run.py --use_v6 --config
+#+end_src

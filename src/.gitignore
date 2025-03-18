@@ -1,0 +1,11 @@
+mixed.yaml
+*.json
+airport.txt
+ui/
+cache.db
+*.srs
+*.yaml
+<<<<<<< HEAD
+=======
+sing-box
+>>>>>>> 24d7973 (init)
